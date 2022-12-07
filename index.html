@@ -1,28 +1,51 @@
-<html>
-<head> 
-<title>To Do List</title> 
- </head>
-<form>
-    <label for="email">Email</label>
-    <input id="email" type="email" value="" maxlength="100" />
-    <input type="checkbox" id="to_do_list" name="email" value="email" />
-    <label for="email"> Done</label><br />
-    <br />
-    <category>emails</category>
-    Phone
-    <input type="text" phone="phone_calls" value="" maxlength="100" />
-    <input type="submit" value="Submit" />
-    <input type="checkbox" id="to_do_list" name="phone" value="phone" />
-    <label for="phone"> Done</label><br />
-    <br />
-    <category>Phone</category>
-    Tasks
-    <input type="text" task="daily_tasks" value="" maxlength="100" />
-    <input type="submit" value="Submit" />
-    <input type="checkbox" id="to_do_list" name="task" value="task" />
-    <label for="task"> Done</label>
-    <category>task</category>
-    <input type="submit" value="done" />
-    <script src='index.js'></script>
-</form>
+<html lang="en">
+  <head>
+    <title>To Do List</title></head>
+    <body>
+        <style>
+            body {
+              background-color: rgb(217, 206, 223);
+            }
+            </style>
+    <form>
+      <label for="email">Email</label>
+      <input id="email" type="email" value="" maxlength="100" />
+      <input type="submit" value="Submit" />
+      <input type="checkbox" id="to_do_list" name="email" value="email" />
+      <label for="email"> Done</label><br />
+      <br />
+      Phone
+      <input type="text" phone="phone_calls" value="" maxlength="100" />
+      <input type="submit" value="Submit" />
+      <input type="checkbox" id="to_do_list" name="phone" value="phone" />
+      <label for="phone"> Done</label><br />
+      <br />
+      
+      Tasks
+      <input type="text" task="daily_tasks" value="" maxlength="100" />
+      <input type="submit" value="Submit" />
+      <input type="checkbox" id="to_do_list" name="task" value="task" />
+      <label for="task"> Done</label>
+      <br></br>
+      <input type="submit" value="done" />
+      <script src="index.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <style>
+div {
+  border: 10px dotted black;
+  padding: 15px;
+  background: lightblue;
+  background-clip: padding-box;
+}
+{
+  background: black;
+  padding: 25px; 
+  background-repeat: no-repeat;
+  background-size: 300px 100px;
+}
+      </style>
+      <body>
+        <div class="rectangle"></div>
+      </body>
+    </form>
 </html>
