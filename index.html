@@ -1,51 +1,138 @@
-<html lang="en">
-  <head>
-    <title>To Do List</title></head>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>To Do List</title></head>
+    </head>
     <body>
-        <style>
-            body {
-              background-color: rgb(217, 206, 223);
-            }
-            </style>
-    <form>
-      <label for="email">Email</label>
-      <input id="email" type="email" value="" maxlength="100" />
-      <input type="submit" value="Submit" />
-      <input type="checkbox" id="to_do_list" name="email" value="email" />
-      <label for="email"> Done</label><br />
-      <br />
-      Phone
-      <input type="text" phone="phone_calls" value="" maxlength="100" />
-      <input type="submit" value="Submit" />
-      <input type="checkbox" id="to_do_list" name="phone" value="phone" />
-      <label for="phone"> Done</label><br />
-      <br />
+        <form>
+            <span class="email">Email</span>
+            <input id="email" type="email" value="" maxlength="100" />
+            <input type="button" class="buttonOne" value="submit">
+            <input type="checkbox" id="to_do_list" name="email" value="email" />
+            <label for="email"> Done</label><br />
+            <br />
+            
       
-      Tasks
-      <input type="text" task="daily_tasks" value="" maxlength="100" />
-      <input type="submit" value="Submit" />
-      <input type="checkbox" id="to_do_list" name="task" value="task" />
-      <label for="task"> Done</label>
-      <br></br>
-      <input type="submit" value="done" />
-      <script src="index.js"></script>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <style>
-div {
-  border: 10px dotted black;
-  padding: 15px;
-  background: lightblue;
-  background-clip: padding-box;
-}
-{
-  background: black;
-  padding: 25px; 
-  background-repeat: no-repeat;
-  background-size: 300px 100px;
-}
-      </style>
-      <body>
-        <div class="rectangle"></div>
-      </body>
-    </form>
+            <label for="phone">Phone</label>
+            <input type="text" phone="phone_calls" value="" maxlength="100" />
+            <input type="button" class="buttonTwo" value="submit">
+            <input type="checkbox" id="to_do_list" name="phone" value="phone" />
+            <label for="phone"> Done</label><br />
+            <br />
+            
+        
+            <label for="phone">Tasks</label>
+            <input type="text" task="daily_tasks" value="" maxlength="100" />
+            <input type="button" class="buttonThree" value="submit">
+            <input type="checkbox" id="to_do_list" name="task" value="task" />
+            <label for="task"> Done</label>
+            <br></br>
+
+        
+            <input type="button" class="button" value="Done">
+
+
+
+            <div id="special"></div>
+            <div class="rectangle"></div>
+
+        </form>
+
+
+        <style>
+        
+        label {
+             color: white;
+              padding: 8px;
+              font-family: Arial;
+            }     
+            .Email {background-color: #04AA6D;} 
+            .Phone {background-color: #2196F3;} 
+            .Tasks {background-color: #ff9800;}
+    
+
+        body {
+              text-align: center;
+            }
+            form {
+                display: inline-block;
+            }
+            body {
+                background-color: rgb(217, 206, 223);
+            }
+
+            .form {
+                max-width: 500px;
+                margin: auto;
+            }
+
+            form {
+                padding: 100px;
+                background: rgb(184, 100, 240);
+                background-clip: padding-box;
+            }
+
+            .firstParagraph {
+                border-top: none;
+            }
+            .buttonOne {
+                 background-color: #ddae57;
+                   color: white;
+                   padding: 10px 32px;
+                   text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 14px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    border-radius: 8px 
+            }
+                    
+            .buttonTwo {
+                 background-color: #4CAF50;
+                   color: white;
+                   padding: 10px 32px;
+                   text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 14px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    border-radius: 8px   
+            }
+                    
+            .buttonThree {
+                 background-color: #cfb78a;
+                   color: white;
+                   padding: 10px 32px;
+                   text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 14px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    border-radius: 8px 
+                }
+
+            .button {
+                 background-color: #7bb0d4;
+                   color: white;
+                   padding: 10px 32px;
+                   text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 14px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    border-radius: 8px 
+                }   
+  
+
+            </style>
+
+        
+        <script src="index.js"></script>
+
+    </body>
 </html>
